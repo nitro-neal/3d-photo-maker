@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-40965546-14"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-40965546-14");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>3D Photo Maker</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div class="colorlib-load"></div>
+    </div>
+
+    <header class="header_area animated">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Menu Area Start -->
+          <div class="col-12 col-lg-10">
+            <div class="menu_area">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">3DPM</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#ca-navbar"
+                  aria-controls="ca-navbar"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Area -->
+                <div class="collapse navbar-collapse" id="ca-navbar">
+                  <ul class="navbar-nav ml-auto" id="nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                  </ul>
+                  <div class="sing-up-button d-lg-none">
+                    <a href="#">Create For Free</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Signup btn -->
+          <div class="col-12 col-lg-2">
+            <div class="sing-up-button d-none d-lg-block">
+              <a href="#">Create For Free</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 col-md">
+            <div class="wellcome-heading">
+              <h2>3D Photo Maker</h2>
+              <h3>3DPM</h3>
+              <p>Be in the moment.</p>
+            </div>
+
+            <p id="please-include-email" style="font-size: 20px; color: white;">
+              Please include an email address so your image can be sent to you.
+            </p>
+
+            <div id="uploadFile" class="get-start-area">
+              <!-- Form Start -->
+              <form action="#" method="post" class="form-inline">
+                <input
+                  type="email"
+                  class="form-control email"
+                  placeholder="email"
+                  id="user-email"
+                />
+
+                <div>
+                  <label class="btn btn-light" for="my-file-selector">
+                    <input id="my-file-selector" type="file" class="d-none" />
+                    <span style="font-size: 20px;">Upload Photo</span>
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            <div id="uploadFileComplete">
+              <p style="font-size: 20px; color: white;">
+                Your perfect 3d photo will be emailed to you shortly.
+              </p>
+              <p style="font-size: 20px; color: white;">
+                Please take a quick
+                <a
+                  target="_blank"
+                  style="font-size: 22px; color: #fb397d;"
+                  href="https://forms.gle/hLD6MuEcWvkZrGHj8"
+                  >survey</a
+                >
+                to share your experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Welcome thumb -->
+      <div
+        width="200px"
+        class="welcome-thumb wow fadeInDown"
+        data-wow-delay="0.6s"
+      >
+        <img src="img/bg-img/welcome-img.png" alt="" />
+        <!-- <img width="200px" src="img/bg-img/hansolo.gif" alt="" /> -->
+      </div>
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about">
+      <!-- Special Description Area -->
+      <div class="special_description_area mt-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="special_description_img">
+                <div class="video-mask">
+                  <video
+                    style="width: 61%; padding: 10px;"
+                    controls
+                    autoplay
+                    loop
+                  >
+                    <source
+                      src="img/video/hansolo_circle.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <!-- <video style="width: 100%;" autoplay loop>
+                  <source
+                    src="img/video/rsz_puppy_circle.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video> -->
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-5 ml-xl-auto">
+              <div class="special_description_content">
+                <h2>Create Moments With Machine Learning</h2>
+                <p>
+                  Convert a single input image into a 3D photo by using
+                  multi-layer representation for novel view synthesis that
+                  contains hallucinated color and depth structures in regions
+                  occluded in the original view This creates 3D Photography
+                  using Context-aware Layered Depth Inpainting.
+                </p>
+
+                <p>
+                  Meng-Li Shih, Shih-Yang Su, Johannes Kopf, and Jia-Bin Huang
+                  In IEEE Conference on Computer Vision and Pattern Recognition
+                  (CVPR), 2020.
+                </p>
+                <!-- <div class="app-download-area">
+                  <div
+                    class="app-download-btn wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  >
+              
+                    <a href="#">
+                      <i class="fa fa-android"></i>
+                      <p class="mb-0"><span>available on</span> Google Store</p>
+                    </a>
+                  </div>
+                  <div
+                    class="app-download-btn wow fadeInDown"
+                    data-wow-delay="0.4s"
+                  >
+              
+                    <a href="#">
+                      <i class="fa fa-apple"></i>
+                      <p class="mb-0"><span>available on</span> Apple Store</p>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Special Area End ***** -->
+
+    <!-- ***** CTA Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="membership-description">
+              <h2>Upload a photo of yourself or a loved one</h2>
+              <p>
+                Find the perfect photo for you — 100% guaranteed to gain
+                attention
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="get-started-button wow bounceInDown"
+              data-wow-delay="0.5s"
+            >
+              <a href="#top">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
+    <section class="special-area bg-white section_padding_100" id="about">
+      <!-- Special Description Area -->
+      <div class="special_description_area mt-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xl-5 ml-xl-auto">
+              <div class="special_description_content">
+                <h2>Memories Are Forever</h2>
+                <p>
+                  Neural networks are a set of algorithms, modeled loosely after
+                  the human brain, that are designed to recognize patterns. They
+                  interpret sensory data through a kind of machine perception,
+                  labeling or clustering raw input. The patterns they recognize
+                  are numerical, contained in vectors, into which all real-world
+                  data, be it images, sound, text or time series, must be
+                  translated.
+                </p>
+
+                <!-- <div class="app-download-area">
+                    <div
+                      class="app-download-btn wow fadeInUp"
+                      data-wow-delay="0.2s"
+                    >
+                
+                      <a href="#">
+                        <i class="fa fa-android"></i>
+                        <p class="mb-0"><span>available on</span> Google Store</p>
+                      </a>
+                    </div>
+                    <div
+                      class="app-download-btn wow fadeInDown"
+                      data-wow-delay="0.4s"
+                    >
+                
+                      <a href="#">
+                        <i class="fa fa-apple"></i>
+                        <p class="mb-0"><span>available on</span> Apple Store</p>
+                      </a>
+                    </div>
+                  </div> -->
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="special_description_img">
+                <div></div>
+
+                <div class="video-mask">
+                  <video
+                    style="width: 61%; padding: 10px;"
+                    controls
+                    autoplay
+                    loop
+                  >
+                    <source
+                      src="img/video/rsz_puppy_circle.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <!-- <video style="width: 100%;" autoplay loop>
+                      <source
+                        src="img/video/rsz_puppy_circle.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+      <!-- footer logo -->
+      <div class="footer-text">
+        <h2>3DPM</h2>
+      </div>
+      <!-- social icon-->
+      <div class="footer-social-icon">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      </div>
+      <!-- Foooter Text-->
+      <div class="copyright-text">
+        <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+        <p>
+          Copyright ©2020
+        </p>
+      </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+  </body>
+</html>
